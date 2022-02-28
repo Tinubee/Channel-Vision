@@ -171,6 +171,7 @@
             this.num_Exposure = new System.Windows.Forms.NumericUpDown();
             this.num_Gain = new System.Windows.Forms.NumericUpDown();
             this.tab_Menu = new System.Windows.Forms.TabControl();
+            this.label3 = new System.Windows.Forms.Label();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cdyDisplay)).BeginInit();
             this.tableLayoutPanel23.SuspendLayout();
@@ -2146,6 +2147,7 @@
             this.tableLayoutPanel4.Controls.Add(this.label2, 0, 1);
             this.tableLayoutPanel4.Controls.Add(this.num_Exposure, 1, 0);
             this.tableLayoutPanel4.Controls.Add(this.num_Gain, 1, 1);
+            this.tableLayoutPanel4.Controls.Add(this.label3, 0, 4);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
@@ -2243,6 +2245,17 @@
             this.tab_Menu.SelectedIndex = 0;
             this.tab_Menu.Size = new System.Drawing.Size(489, 970);
             this.tab_Menu.TabIndex = 3;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("맑은 고딕", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label3.Location = new System.Drawing.Point(4, 185);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(87, 32);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "테스트";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Frm_ToolSetUp
             // 
@@ -2494,5 +2507,6 @@
         private System.Windows.Forms.Button btn_OpenMaster;
         private System.Windows.Forms.Button btn_ApplyMaster;
         private System.Windows.Forms.Label lb_CurruntModelName;
+        private System.Windows.Forms.Label label3;
     }
 }
