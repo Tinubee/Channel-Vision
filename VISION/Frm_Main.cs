@@ -189,7 +189,6 @@ namespace VISION
             Initialize_CameraInit(); //카메라 초기화 및 연결 - 카메라연결을 제일 마지막에 해줘야한다.
             CamSet();
             CognexModelLoad();
-            timer_Perform.Start();
             log.AddLogMessage(LogType.Infomation, 0, "Vision Program Start");
             //Process.Start($"{Glob.LOADINGFROM}");
             Process[] myProcesses = Process.GetProcessesByName("LoadingForm_KHM");
@@ -3719,39 +3718,6 @@ namespace VISION
         {
             int jobNo = Convert.ToInt16((sender as Button).Tag);
             Main_TabControl.SelectedIndex = jobNo;
-        }
-
-        private void timer_Perform_Tick(object sender, EventArgs e)
-        {
-            try
-            {
-                float vCPU = CPU.NextValue();
-                float vRAM = RAM.NextValue();
-                float vDiskC = PC_DISKC.NextValue();
-                float vDiskD = PC_DISKD.NextValue();
-
-                //100넘는 값이 가끔 들어온다 이유모름
-                if (vCPU <= 100 && vRAM <= 100 && vDiskC <= 100 && vDiskD <= 100)
-                {
-                    pBar_CPU.Value = (int)vCPU;
-                    pBar_RAM.Value = (int)vRAM;
-                    pBar_DiskC.Value = (int)vDiskC;
-                    pBar_DiskD.Value = (int)vDiskD;
-
-                    lb_CPUUsage.Text = vCPU.ToString("F2") + "%";
-                    lb_RAMUsage.Text = vRAM.ToString("F2") + "%";
-                    lb_CUsage.Text = vDiskC.ToString("F2") + "%";
-                    lb_DUsage.Text = vDiskD.ToString("F2") + "%";
-                    //if ((int)vDiskD > 80)
-                    //    bk_AutoDelete.RunWorkerAsync();
-                    //else
-                    //    bk_AutoDelete.CancelAsync();
-                }
-            }
-            catch(Exception ee)
-            {
-                log.AddLogMessage(LogType.Error, 0, ee.Message);
-            }
         }
 
         private void btn_Analyze_Click(object sender, EventArgs e)

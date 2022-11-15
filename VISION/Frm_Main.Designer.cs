@@ -205,28 +205,6 @@
             this.btn_Log = new System.Windows.Forms.Button();
             this.btn_Count = new System.Windows.Forms.Button();
             this.tableLayoutPanel31 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel32 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel33 = new System.Windows.Forms.TableLayoutPanel();
-            this.lb_DUsage = new System.Windows.Forms.Label();
-            this.pBar_DiskD = new System.Windows.Forms.ProgressBar();
-            this.tableLayoutPanel34 = new System.Windows.Forms.TableLayoutPanel();
-            this.lb_CUsage = new System.Windows.Forms.Label();
-            this.pBar_DiskC = new System.Windows.Forms.ProgressBar();
-            this.tableLayoutPanel35 = new System.Windows.Forms.TableLayoutPanel();
-            this.pBar_RAM = new System.Windows.Forms.ProgressBar();
-            this.lb_RAMUsage = new System.Windows.Forms.Label();
-            this.tableLayoutPanel36 = new System.Windows.Forms.TableLayoutPanel();
-            this.pBar_CPU = new System.Windows.Forms.ProgressBar();
-            this.lb_CPUUsage = new System.Windows.Forms.Label();
-            this.btn_DiskD = new System.Windows.Forms.Button();
-            this.btn_CPU = new System.Windows.Forms.Button();
-            this.btn_RAM = new System.Windows.Forms.Button();
-            this.btn_DiskC = new System.Windows.Forms.Button();
-            this.timer_Perform = new System.Windows.Forms.Timer(this.components);
-            this.CPU = new System.Diagnostics.PerformanceCounter();
-            this.RAM = new System.Diagnostics.PerformanceCounter();
-            this.PC_DISKC = new System.Diagnostics.PerformanceCounter();
-            this.PC_DISKD = new System.Diagnostics.PerformanceCounter();
             this.bk_AutoDelete = new System.ComponentModel.BackgroundWorker();
             this.tlpUnder.SuspendLayout();
             this.tlpTopSide.SuspendLayout();
@@ -272,15 +250,6 @@
             this.tableLayoutPanel17.SuspendLayout();
             this.tableLayoutPanel16.SuspendLayout();
             this.tableLayoutPanel31.SuspendLayout();
-            this.tableLayoutPanel32.SuspendLayout();
-            this.tableLayoutPanel33.SuspendLayout();
-            this.tableLayoutPanel34.SuspendLayout();
-            this.tableLayoutPanel35.SuspendLayout();
-            this.tableLayoutPanel36.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.CPU)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RAM)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PC_DISKC)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PC_DISKD)).BeginInit();
             this.SuspendLayout();
             // 
             // tlpUnder
@@ -2858,257 +2827,6 @@
             this.tableLayoutPanel31.Size = new System.Drawing.Size(489, 60);
             this.tableLayoutPanel31.TabIndex = 27;
             // 
-            // tableLayoutPanel32
-            // 
-            this.tableLayoutPanel32.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
-            this.tableLayoutPanel32.ColumnCount = 2;
-            this.tableLayoutPanel32.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel32.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80F));
-            this.tableLayoutPanel32.Controls.Add(this.tableLayoutPanel33, 1, 3);
-            this.tableLayoutPanel32.Controls.Add(this.tableLayoutPanel34, 1, 2);
-            this.tableLayoutPanel32.Controls.Add(this.tableLayoutPanel35, 1, 1);
-            this.tableLayoutPanel32.Controls.Add(this.tableLayoutPanel36, 1, 0);
-            this.tableLayoutPanel32.Controls.Add(this.btn_DiskD, 0, 3);
-            this.tableLayoutPanel32.Controls.Add(this.btn_CPU, 0, 0);
-            this.tableLayoutPanel32.Controls.Add(this.btn_RAM, 0, 1);
-            this.tableLayoutPanel32.Controls.Add(this.btn_DiskC, 0, 2);
-            this.tableLayoutPanel32.Location = new System.Drawing.Point(1428, 80);
-            this.tableLayoutPanel32.Name = "tableLayoutPanel32";
-            this.tableLayoutPanel32.RowCount = 4;
-            this.tableLayoutPanel32.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel32.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel32.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel32.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel32.Size = new System.Drawing.Size(488, 206);
-            this.tableLayoutPanel32.TabIndex = 219;
-            // 
-            // tableLayoutPanel33
-            // 
-            this.tableLayoutPanel33.ColumnCount = 2;
-            this.tableLayoutPanel33.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80F));
-            this.tableLayoutPanel33.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel33.Controls.Add(this.lb_DUsage, 0, 0);
-            this.tableLayoutPanel33.Controls.Add(this.pBar_DiskD, 0, 0);
-            this.tableLayoutPanel33.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel33.Location = new System.Drawing.Point(102, 157);
-            this.tableLayoutPanel33.Name = "tableLayoutPanel33";
-            this.tableLayoutPanel33.RowCount = 1;
-            this.tableLayoutPanel33.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel33.Size = new System.Drawing.Size(382, 45);
-            this.tableLayoutPanel33.TabIndex = 231;
-            // 
-            // lb_DUsage
-            // 
-            this.lb_DUsage.AutoSize = true;
-            this.lb_DUsage.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lb_DUsage.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.lb_DUsage.Location = new System.Drawing.Point(308, 0);
-            this.lb_DUsage.Name = "lb_DUsage";
-            this.lb_DUsage.Size = new System.Drawing.Size(71, 45);
-            this.lb_DUsage.TabIndex = 227;
-            this.lb_DUsage.Text = "00.00%";
-            this.lb_DUsage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pBar_DiskD
-            // 
-            this.pBar_DiskD.BackColor = System.Drawing.SystemColors.Control;
-            this.pBar_DiskD.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pBar_DiskD.Location = new System.Drawing.Point(3, 3);
-            this.pBar_DiskD.Name = "pBar_DiskD";
-            this.pBar_DiskD.Size = new System.Drawing.Size(299, 39);
-            this.pBar_DiskD.TabIndex = 225;
-            // 
-            // tableLayoutPanel34
-            // 
-            this.tableLayoutPanel34.ColumnCount = 2;
-            this.tableLayoutPanel34.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80F));
-            this.tableLayoutPanel34.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel34.Controls.Add(this.lb_CUsage, 0, 0);
-            this.tableLayoutPanel34.Controls.Add(this.pBar_DiskC, 0, 0);
-            this.tableLayoutPanel34.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel34.Location = new System.Drawing.Point(102, 106);
-            this.tableLayoutPanel34.Name = "tableLayoutPanel34";
-            this.tableLayoutPanel34.RowCount = 1;
-            this.tableLayoutPanel34.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel34.Size = new System.Drawing.Size(382, 44);
-            this.tableLayoutPanel34.TabIndex = 230;
-            // 
-            // lb_CUsage
-            // 
-            this.lb_CUsage.AutoSize = true;
-            this.lb_CUsage.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lb_CUsage.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.lb_CUsage.Location = new System.Drawing.Point(308, 0);
-            this.lb_CUsage.Name = "lb_CUsage";
-            this.lb_CUsage.Size = new System.Drawing.Size(71, 44);
-            this.lb_CUsage.TabIndex = 227;
-            this.lb_CUsage.Text = "00.00%";
-            this.lb_CUsage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pBar_DiskC
-            // 
-            this.pBar_DiskC.BackColor = System.Drawing.SystemColors.Control;
-            this.pBar_DiskC.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pBar_DiskC.Location = new System.Drawing.Point(3, 3);
-            this.pBar_DiskC.Name = "pBar_DiskC";
-            this.pBar_DiskC.Size = new System.Drawing.Size(299, 38);
-            this.pBar_DiskC.TabIndex = 225;
-            // 
-            // tableLayoutPanel35
-            // 
-            this.tableLayoutPanel35.ColumnCount = 2;
-            this.tableLayoutPanel35.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80F));
-            this.tableLayoutPanel35.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel35.Controls.Add(this.pBar_RAM, 0, 0);
-            this.tableLayoutPanel35.Controls.Add(this.lb_RAMUsage, 1, 0);
-            this.tableLayoutPanel35.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel35.Location = new System.Drawing.Point(102, 55);
-            this.tableLayoutPanel35.Name = "tableLayoutPanel35";
-            this.tableLayoutPanel35.RowCount = 1;
-            this.tableLayoutPanel35.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel35.Size = new System.Drawing.Size(382, 44);
-            this.tableLayoutPanel35.TabIndex = 229;
-            // 
-            // pBar_RAM
-            // 
-            this.pBar_RAM.BackColor = System.Drawing.SystemColors.Control;
-            this.pBar_RAM.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pBar_RAM.Location = new System.Drawing.Point(3, 3);
-            this.pBar_RAM.Name = "pBar_RAM";
-            this.pBar_RAM.Size = new System.Drawing.Size(299, 38);
-            this.pBar_RAM.TabIndex = 224;
-            // 
-            // lb_RAMUsage
-            // 
-            this.lb_RAMUsage.AutoSize = true;
-            this.lb_RAMUsage.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lb_RAMUsage.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.lb_RAMUsage.Location = new System.Drawing.Point(308, 0);
-            this.lb_RAMUsage.Name = "lb_RAMUsage";
-            this.lb_RAMUsage.Size = new System.Drawing.Size(71, 44);
-            this.lb_RAMUsage.TabIndex = 226;
-            this.lb_RAMUsage.Text = "00.00%";
-            this.lb_RAMUsage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // tableLayoutPanel36
-            // 
-            this.tableLayoutPanel36.ColumnCount = 2;
-            this.tableLayoutPanel36.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80F));
-            this.tableLayoutPanel36.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel36.Controls.Add(this.pBar_CPU, 0, 0);
-            this.tableLayoutPanel36.Controls.Add(this.lb_CPUUsage, 1, 0);
-            this.tableLayoutPanel36.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel36.Location = new System.Drawing.Point(102, 4);
-            this.tableLayoutPanel36.Name = "tableLayoutPanel36";
-            this.tableLayoutPanel36.RowCount = 1;
-            this.tableLayoutPanel36.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel36.Size = new System.Drawing.Size(382, 44);
-            this.tableLayoutPanel36.TabIndex = 228;
-            // 
-            // pBar_CPU
-            // 
-            this.pBar_CPU.BackColor = System.Drawing.SystemColors.Control;
-            this.pBar_CPU.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pBar_CPU.Location = new System.Drawing.Point(3, 3);
-            this.pBar_CPU.Name = "pBar_CPU";
-            this.pBar_CPU.Size = new System.Drawing.Size(299, 38);
-            this.pBar_CPU.TabIndex = 222;
-            // 
-            // lb_CPUUsage
-            // 
-            this.lb_CPUUsage.AutoSize = true;
-            this.lb_CPUUsage.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lb_CPUUsage.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.lb_CPUUsage.Location = new System.Drawing.Point(308, 0);
-            this.lb_CPUUsage.Name = "lb_CPUUsage";
-            this.lb_CPUUsage.Size = new System.Drawing.Size(71, 44);
-            this.lb_CPUUsage.TabIndex = 221;
-            this.lb_CPUUsage.Text = "00.00%";
-            this.lb_CPUUsage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btn_DiskD
-            // 
-            this.btn_DiskD.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.btn_DiskD.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn_DiskD.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btn_DiskD.Location = new System.Drawing.Point(4, 157);
-            this.btn_DiskD.Name = "btn_DiskD";
-            this.btn_DiskD.Size = new System.Drawing.Size(91, 45);
-            this.btn_DiskD.TabIndex = 4;
-            this.btn_DiskD.TabStop = false;
-            this.btn_DiskD.Tag = "2";
-            this.btn_DiskD.Text = "DISK D";
-            this.btn_DiskD.UseVisualStyleBackColor = false;
-            // 
-            // btn_CPU
-            // 
-            this.btn_CPU.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.btn_CPU.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn_CPU.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btn_CPU.Location = new System.Drawing.Point(4, 4);
-            this.btn_CPU.Name = "btn_CPU";
-            this.btn_CPU.Size = new System.Drawing.Size(91, 44);
-            this.btn_CPU.TabIndex = 1;
-            this.btn_CPU.TabStop = false;
-            this.btn_CPU.Tag = "0";
-            this.btn_CPU.Text = "CPU";
-            this.btn_CPU.UseVisualStyleBackColor = false;
-            // 
-            // btn_RAM
-            // 
-            this.btn_RAM.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.btn_RAM.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn_RAM.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btn_RAM.Location = new System.Drawing.Point(4, 55);
-            this.btn_RAM.Name = "btn_RAM";
-            this.btn_RAM.Size = new System.Drawing.Size(91, 44);
-            this.btn_RAM.TabIndex = 2;
-            this.btn_RAM.TabStop = false;
-            this.btn_RAM.Tag = "1";
-            this.btn_RAM.Text = "RAM";
-            this.btn_RAM.UseVisualStyleBackColor = false;
-            // 
-            // btn_DiskC
-            // 
-            this.btn_DiskC.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.btn_DiskC.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn_DiskC.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btn_DiskC.Location = new System.Drawing.Point(4, 106);
-            this.btn_DiskC.Name = "btn_DiskC";
-            this.btn_DiskC.Size = new System.Drawing.Size(91, 44);
-            this.btn_DiskC.TabIndex = 3;
-            this.btn_DiskC.TabStop = false;
-            this.btn_DiskC.Tag = "2";
-            this.btn_DiskC.Text = "DISK C";
-            this.btn_DiskC.UseVisualStyleBackColor = false;
-            // 
-            // timer_Perform
-            // 
-            this.timer_Perform.Tick += new System.EventHandler(this.timer_Perform_Tick);
-            // 
-            // CPU
-            // 
-            this.CPU.CategoryName = "Processor Information";
-            this.CPU.CounterName = "% Processor Time";
-            this.CPU.InstanceName = "_Total";
-            // 
-            // RAM
-            // 
-            this.RAM.CategoryName = "Memory";
-            this.RAM.CounterName = "% Committed Bytes In Use";
-            // 
-            // PC_DISKC
-            // 
-            this.PC_DISKC.CategoryName = "PhysicalDisk";
-            this.PC_DISKC.CounterName = "% Disk Time";
-            this.PC_DISKC.InstanceName = "0 C:";
-            // 
-            // PC_DISKD
-            // 
-            this.PC_DISKD.CategoryName = "PhysicalDisk";
-            this.PC_DISKD.CounterName = "% Disk Time";
-            this.PC_DISKD.InstanceName = "1 D:";
-            // 
             // bk_AutoDelete
             // 
             this.bk_AutoDelete.WorkerSupportsCancellation = true;
@@ -3120,7 +2838,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DimGray;
             this.ClientSize = new System.Drawing.Size(1920, 1080);
-            this.Controls.Add(this.tableLayoutPanel32);
             this.Controls.Add(this.tableLayoutPanel31);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.tlpTopSide);
@@ -3197,19 +2914,6 @@
             this.tableLayoutPanel16.ResumeLayout(false);
             this.tableLayoutPanel16.PerformLayout();
             this.tableLayoutPanel31.ResumeLayout(false);
-            this.tableLayoutPanel32.ResumeLayout(false);
-            this.tableLayoutPanel33.ResumeLayout(false);
-            this.tableLayoutPanel33.PerformLayout();
-            this.tableLayoutPanel34.ResumeLayout(false);
-            this.tableLayoutPanel34.PerformLayout();
-            this.tableLayoutPanel35.ResumeLayout(false);
-            this.tableLayoutPanel35.PerformLayout();
-            this.tableLayoutPanel36.ResumeLayout(false);
-            this.tableLayoutPanel36.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.CPU)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RAM)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PC_DISKC)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PC_DISKD)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -3390,28 +3094,6 @@
         private System.Windows.Forms.Button btn_Count;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel31;
         private KimLib.LogControl logControl1;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel32;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel33;
-        private System.Windows.Forms.Label lb_DUsage;
-        private System.Windows.Forms.ProgressBar pBar_DiskD;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel34;
-        private System.Windows.Forms.Label lb_CUsage;
-        private System.Windows.Forms.ProgressBar pBar_DiskC;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel35;
-        private System.Windows.Forms.ProgressBar pBar_RAM;
-        private System.Windows.Forms.Label lb_RAMUsage;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel36;
-        private System.Windows.Forms.ProgressBar pBar_CPU;
-        private System.Windows.Forms.Label lb_CPUUsage;
-        private System.Windows.Forms.Button btn_DiskD;
-        private System.Windows.Forms.Button btn_CPU;
-        private System.Windows.Forms.Button btn_RAM;
-        private System.Windows.Forms.Button btn_DiskC;
-        private System.Windows.Forms.Timer timer_Perform;
-        private System.Diagnostics.PerformanceCounter CPU;
-        private System.Diagnostics.PerformanceCounter RAM;
-        internal System.Diagnostics.PerformanceCounter PC_DISKC;
-        internal System.Diagnostics.PerformanceCounter PC_DISKD;
         private System.Windows.Forms.Button btn_Analyze;
         public System.ComponentModel.BackgroundWorker bk_AutoDelete;
     }
